@@ -1,103 +1,112 @@
 module.exports = {
-  title: 'Hawkeye Documentation',
-  tagline: '',
-  url: 'https://developers.hwky.ai',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'hwkyai', // Usually your GitHub org/user name.
-  projectName: 'developers.hwky.ai', // Usually your repo name.
+  title: "Hawkeye Documentation",
+  tagline: "",
+  url: "https://developers.hwky.ai",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "hwkyai", // Usually your GitHub org/user name.
+  projectName: "developers.hwky.ai", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "Hawkeye Documentation",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Hawkeye Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "blog",
+          label: "Blog",
+          position: "left",
+        },
+        {
+          href: "https://github.com/hwkyai",
+          label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://gitlab.com/hwky-ai",
+          label: "GitLab",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "light",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Style Guide",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Second Doc",
+              to: "docs/doc2/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Forums",
+              href: "https://community.hwky.ai",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discord.gg/7kNVaUrezJ",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "LinkedIn",
+              href: "https://linkedin.com/company/hwky",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/hwkyai",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hawkeye. Built with Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
