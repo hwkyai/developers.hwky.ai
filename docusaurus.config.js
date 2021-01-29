@@ -9,6 +9,10 @@ module.exports = {
   organizationName: "hwkyai", // Usually your GitHub org/user name.
   projectName: "developers.hwky.ai", // Usually your repo name.
   themeConfig: {
+    gtag: {
+      trackingID: 'G-M29VKZ012N',
+      anonymizeIP: false,
+    },
     navbar: {
       title: "Hawkeye Documentation",
       logo: {
@@ -23,17 +27,7 @@ module.exports = {
           position: "left",
         },
         {
-          to: "blog",
-          label: "Blog",
-          position: "left",
-        },
-        {
-          href: "https://github.com/hwkyai",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://gitlab.com/hwky-ai",
+          href: "https://gitlab.com/hwkyai",
           label: "GitLab",
           position: "right",
         },
@@ -46,13 +40,9 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
+              label: "Getting Started",
               to: "docs/",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2/",
-            },
+            }
           ],
         },
         {
@@ -76,12 +66,8 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/hwkyai",
+              href: "https://gitlab.com/hwkyai",
+              label: "GitLab",
             },
           ],
         },
@@ -96,14 +82,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
+          editUrl: "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
+          editUrl: "https://github.com/hwkyai/developers.hwky.ai/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
